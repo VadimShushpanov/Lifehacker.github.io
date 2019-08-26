@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+  <header class="header">
+    <img class="logo-lifechacker" src="img/Lifehacker.png">
+    <img class="logo-huawei" src="img/huawei-logo.png">
+    <div>
+    <button class="btn-repost" onclick='this.style.display="none";  document.getElementById("social").style.display = "flex"; document.getElementById("social").style.border=" solid 1px #db4696";'>Поделись с друзьями</button>
+      <div  class="btn-repost social" id="social" style="display: none;">
+        <div class="fb"></div>
+        <div class="tw"></div>
+        <div class="vk"></div>
+      </div>
+    </div>
+  </header>
+  <div class='photos'>
+    <div class="photos__item  human-1" > 
+      <div class='photos__item-info'>
+          <h3 class="photos__item-title">Мой офис — <br>это моя голова</h3>
+          <div class="photos__item-name">
+            Лариса Онуфриенко 
+          </div>
+          <p class="photos__item-description">основатель, организатор и координатор <br> в ASTRA MUSIC event agency </p>  
+        </div>   
+    </div>
+    <div class="photos__item  human-2" > 
+      <div class='photos__item-info'>
+          <h3 class="photos__item-title">Мой офис — <br>это моя голова</h3>
+          <div class="photos__item-name">
+            Катя Федина 
+          </div>
+          <p class="photos__item-description" >основатель, организатор и координатор <br> в ASTRA MUSIC event agency </p>  
+        </div>  
+    </div>
+    <div class="photos__item  human-3" > 
+      <div class='photos__item-info'>
+          <h3 class="photos__item-title">Мой офис — <br>это моя голова</h3>
+          <div class="photos__item-name">
+              Павел Занозин 
+          </div>
+          <p  class="photos__item-description">основатель, организатор и координатор <br> в ASTRA MUSIC event agency </p>  
+        </div> 
+    </div>
+    <div class="photos__item  human-4" > 
+      <div class='photos__item-info'>
+          <h3 class="photos__item-title">Мой офис — <br>это моя голова</h3>
+          <div class="photos__item-name">
+              Никита Забелин 
+          </div>
+          <p  class="photos__item-description">основатель, организатор и координатор <br> в ASTRA MUSIC event agency </p>  
+        </div> 
+    </div>
+    <div class="slides-people">
+        <span class="blogPhotoSlider__dots--dot active-Photo" onclick="currentPhotoSlide(1)"></span> 
+        <span class="blogPhotoSlider__dots--dot" onclick="currentPhotoSlide(2)"></span> 
+        <span class="blogPhotoSlider__dots--dot" onclick="currentPhotoSlide(3)"></span>
+        <span class="blogPhotoSlider__dots--dot" onclick="currentPhotoSlide(4)"></span>
+    </div>
+  </div>
+  <div class="information">
+    <h3 class="information__title">Повелители времени</h2>
+    <p class="information__text">Как управлять своим временем и что им в этом помогает
+      рассказывают люди четырех профессий</p>
+  </div>
+  <div class="mediaPad">
+      <img class='mediaPad__img' src="img/MediaPad.png"> 
+      <div class="mediaPad__info"> 
+        <img src="img/MediaPad-text.png">
+        <button class='btn-buy'>
+          Купить
+        </button>
+      </div>
+  </div>
+  <div class="slider">
+    <div class="slider-content">
+      <div class="blog-slider__container">
+        <div class="blogSlides fade">
+          <div class="slider-content__info">  
+            <img  class='slider-content__img' src="img/5-layers.png">
+            <div class="slider-content__text">
+              Защищённый изогнутым стеклом 2К-дисплей с диагональю 8,4 или 10,8 дюйма  поражает детализацией картинки.
+              Технология ClariVu 5.0 расширяет динамический диапазон, увеличивая контрастность и насыщенность,
+              а режим Eye Comfort снижает усталость глаз при использовании планшета вечером и ночью.
+            </div>
+          </div>
+        </div>
+  
+        <div class="blogSlides fade">
+          <div class="slider-content__info">  
+            <img  class='slider-content__img' src="img/5-layers.png">
+            <div class="slider-content__text">
+              Технология ClariVu 5.0 расширяет динамический диапазон, увеличивая контрастность и насыщенность,
+              а режим Eye Comfort снижает усталость глаз при использовании планшета вечером и ночью.
+            </div>
+          </div>    
+        </div>
+  
+        <div class="blogSlides fade">
+          <div class="slider-content__info">  
+            <img  class='slider-content__img' src="img/5-layers.png">
+            <div class="slider-content__text">
+              Защищённый изогнутым стеклом 2К-дисплей с диагональю 8,4 или 10,8 дюйма  поражает детализацией картинки.
+              Технология ClariVu 5.0 расширяет динамический диапазон.
+            </div>
+          </div>
+        </div>
+        <div class="slides">
+          <span class="blogSlider__dots--dot" onclick="currentSlide(1)"></span> 
+          <span class="blogSlider__dots--dot" onclick="currentSlide(2)"></span> 
+          <span class="blogSlider__dots--dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <div class="arrows">
+          <a class="prev" onclick="plusSlides(-1)"><div class="arrow"></div></a>
+          <a class="next" onclick="plusSlides(1)"><div class="arrow"></div></a>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <footer class="footer">
+    <div class="bottom">
+      <div class="bottom__brand-link">
+          <span class="span-lifechacker">Лайфхакер</span> | <span  class="span-huawei"> Huawei  </span> © 2018 </div>
+      </div>    
+      <div>
+        <button class="btn-repost" onclick='this.style.display="none";  document.getElementById("social-footer").style.display = "flex"; document.getElementById("social-footer").style.border="solid 1px #db4696";'>Поделись с друзьями</button>
+          <div  class="btn-repost social" id="social-footer" style="display: none;">
+            <div class="fb"></div>
+            <div class="tw"></div>
+            <div class="vk"></div>
+          </div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
+<script src="js/script.js"></script>
